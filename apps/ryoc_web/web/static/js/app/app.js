@@ -20,3 +20,9 @@ import "phoenix_html"
 
 // import socket from "./socket"
 import './app.css'
+
+import cthulhu from '../../assets/images/Cthulhu_blood.png'
+
+const image = document.createElement('img')
+image.src = cthulhu
+document.body.appendChild(image)
