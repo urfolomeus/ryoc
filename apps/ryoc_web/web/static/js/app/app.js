@@ -23,6 +23,13 @@ import './app.css'
 
 import cthulhu from '../../assets/images/Cthulhu_blood.png'
 
-const image = document.createElement('img')
-image.src = cthulhu
-document.body.appendChild(image)
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+const content =
+  <div>
+    <h1>Hello, world!</h1>
+    <img src={cthulhu} />
+  </div>
+
+ReactDOM.render(content, document.querySelector('.app'));
